@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.DetailFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="55dp"
+           android:background="@color/purple_700"
+           android:paddingLeft="10dp"
+           android:paddingRight="10dp">
+
+           <ImageView
+               android:id="@+id/backIv"
+               android:layout_width="42dp"
+               android:layout_height="42dp"
+               android:src="@drawable/ic_back"
+               android:layout_centerVertical="true"
+               android:foreground="@drawable/btn_rect_ripple_effect"
+               android:padding="4dp"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="18sp"
+               android:textColor="@color/white"
+               android:text="@string/detail_page"
+               android:textStyle="bold"
+               android:layout_centerInParent="true"/>
+
+       </RelativeLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:padding="10dp">
+
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="220dp"
+               app:cardCornerRadius="10dp"
+               app:cardBackgroundColor="@color/white"
+               app:cardUseCompatPadding="true">
+
+               <ImageView
+                   android:id="@+id/urlImage"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="centerCrop"/>
+
+           </androidx.cardview.widget.CardView>
+
+
+
+           <TextView
+               android:id="@+id/titleTv"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/black"
+               android:textSize="18sp"
+               android:layout_marginTop="15dp"
+               android:layout_marginLeft="10dp"/>
+
+           <TextView
+               android:id="@+id/urlTv"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/black"
+               android:textSize="12sp"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="10dp"/>
+
+       </LinearLayout>
+
+
+
+   </LinearLayout>
+</layout>
